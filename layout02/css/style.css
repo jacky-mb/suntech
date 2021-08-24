@@ -3,10 +3,8 @@
     }
     
     .container {
-        /* border: solid 1px red; */
-        max-width: 100%;
-        /* margin: 0px 20px; */
-        padding: 40px;
+        max-width: 90%;
+        margin: auto;
     }
     
     li {
@@ -19,10 +17,16 @@
     /*Header */
     
     header {
-        display: flex;
-        max-height: 60px;
         width: 100%;
+    }
+    
+    header .container {
+        max-height: 60px;
+        border: red;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     
     .logo {
@@ -39,7 +43,7 @@
     }
     
     .main-menu {
-        width: 50%;
+        width: 60%;
     }
     
     .main-menu ul {
@@ -61,7 +65,7 @@
     }
     
     .tool-bar {
-        width: 25%;
+        width: 15%;
         text-align: center;
     }
     
@@ -132,6 +136,12 @@
         z-index: 9999;
     }
     /*best seller*/
+    
+    best-seller {
+        border: solid 1px rgb(206, 28, 28);
+        display: block;
+        width: 100%;
+    }
     
     .best-seller {
         margin-top: 40px;
