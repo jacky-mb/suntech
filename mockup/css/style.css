@@ -13,6 +13,9 @@ html a:hover {
 html .container {
   max-width: 1230px;
 }
+html .clear {
+  padding: 30px;
+}
 
 /*Header*/
 .header-content .header-top {
@@ -138,28 +141,203 @@ html .container {
   color: red;
 }
 
-banner {
+banner .container {
+  display: block;
   width: 100%;
 }
-banner .banner {
+banner .container .single-banner {
+  display: block;
   margin-bottom: 10px;
   width: 100%;
 }
-banner .banner img {
+banner .container .single-banner img {
   max-width: 100%;
 }
-banner .slide-banner ul {
-  min-height: 444px;
+banner .container .slide-banner {
+  width: 100%;
+}
+banner .container .slide-banner ul {
   position: relative;
   padding: 0px;
   width: 100%;
+  min-height: 480px;
 }
-banner .slide-banner ul li > img {
+banner .container .slide-banner ul li {
+  padding: 0px;
+  position: absolute;
+}
+banner .container .slide-banner ul li img {
   max-width: 100%;
   min-width: 1200px;
 }
-banner .slide-banner ul li {
+
+.best-product {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #F5F5F5;
+}
+.best-product .container {
+  position: relative;
+  width: 100%;
+}
+.best-product .container .category-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.best-product .container .category-title a {
+  background: #E9B02A;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  padding: 10px 98px;
+}
+.best-product .container .product {
+  padding: 0px;
+  width: 100%;
+}
+.best-product .container .product ul {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.best-product .container .product li {
+  background-color: white;
+  width: 19%;
+}
+.best-product .container .product li img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.best-product .container .next,
+.best-product .container .prev {
+  border-radius: 50%;
+  background-color: yellow;
+  width: 40px;
+  height: 40px;
   position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.single-banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-banner .container a {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.single-banner .container a img {
+  max-width: 100%;
+}
+.single-banner .container a:nth-child(3) {
+  width: 100%;
+}
+
+.home-product-upsell .container .block-heading {
+  max-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-product-upsell .container .block-heading h1 {
+  font-size: 1.8rem;
+  width: 25%;
+  text-transform: uppercase;
+}
+.home-product-upsell .container .block-heading div {
+  width: 65%;
+}
+.home-product-upsell .container .block-heading div img {
+  max-width: 100%;
+}
+.home-product-upsell .container .block-heading a {
+  font-style: italic;
+}
+.home-product-upsell .container .product-list ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.home-product-upsell .container .product-list ul li {
+  width: 19%;
+  border: solid 0.5px gray;
+  border-radius: 15px;
+}
+.home-product-upsell .container .product-list ul li img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.banner-promotion .container {
+  display: block;
+}
+.banner-promotion .container img {
+  width: 100%;
+}
+
+.product-suggest {
+  margin-top: 30px;
+}
+.product-suggest .container .block-heading {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  border-radius: 15px 15px 0px 0px;
+}
+.product-suggest .container .block-heading h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.product-suggest .container .block-heading a {
+  margin-right: 15px;
+  font-style: italic;
+  color: white;
+}
+.product-suggest .container ul {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-suggest .container ul li {
+  width: 19%;
+}
+.product-suggest .container ul li img {
+  max-width: 100%;
+}
+.product-suggest .container .btn-viewall {
+  display: block;
+  background: #E9B02A;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  padding: 10px 98px;
+}
+
+footer {
+  background-color: #EAEAEA;
+}
+footer .footer-top {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
